@@ -1,14 +1,12 @@
 import {
   Controller,
   Get,
-  Query,
   Post,
   Body,
   Put,
   Param,
   Delete,
 } from '@nestjs/common';
-import { ListAllScore } from './dto/list-all-score.dto';
 import { CreateScoreDto } from './dto/create-score.dto';
 import { UpdateScoreDto } from './dto/update-score.dto';
 
@@ -17,13 +15,13 @@ export class ScoreController {
   @Post()
   create(@Body() createScoreDto: CreateScoreDto) {
     this.create(createScoreDto);
-    return 'This action adds a new cat';
+    return 'This action adds a new score';
   }
 
-  @Get()
-  findAll(@Query() query: ListAllScore) {
-    return `This action returns all cats (limit: ${query.limit} items)`;
-  }
+  // @Get()
+  // findAll(@Query() query: ListAllScore) {
+  //   return `This action returns all scores (limit: ${query.limit} items)`;
+  // }
 
   @Get(':id')
   findOne(@Param('id') id: string) {

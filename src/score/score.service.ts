@@ -13,8 +13,10 @@ export class ScoreService {
     return this.scores.find((v) => v.id == id);
   }
 
-  update(id: string, score: Score) {
-    const scoreToUpdate = this.findOne(id);
+  update(id: string, score: Score): Score {
+    let scoreToUpdate = this.findOne(id);
+    scoreToUpdate = score;
+    return scoreToUpdate;
   }
 
   findAll(): Score[] {
