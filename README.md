@@ -1,5 +1,5 @@
 # Example NestJS Application
-At this point, this is just a clone of the Typescript starter app provided from NestJS, but this will be developed from here as an excellent starting point.  The purpose of this application is to demonstrate my coding style and skills for potential employers and/or customers.  
+Demonstration API app with an endpoint that manages a sheet music collection
 
 
 ## Project setup
