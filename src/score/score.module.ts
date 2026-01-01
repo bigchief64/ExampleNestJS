@@ -4,4 +4,4 @@ import { ScoreController } from './score.controller';
 @Module({
   controllers: [ScoreController],
 })
-export class AppModule {}
+export class ScoreModule {}
